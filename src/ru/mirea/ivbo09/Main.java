@@ -85,14 +85,14 @@ public class Main {
                 }
             case 7:
                 int number = scanner.nextInt();
-                int number2=number;
-                number=Factorial(number);
-                System.out.println("Факториал методом рекурсии = " +number);
+                int number2 = number;
+                number = Factorial(number);
+                System.out.println("Факториал методом рекурсии = " + number);
                 int result = 1;
-                for (int i = 1; i <=number2; i ++){
-                    result = result*i;
+                for (int i = 1; i <= number2; i++) {
+                    result = result * i;
                 }
-                System.out.print("Проверка = "+result);
+                System.out.print("Проверка = " + result);
 
         }
     }

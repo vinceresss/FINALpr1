@@ -22,18 +22,22 @@ public class Main {
                     value += Array[i];
                 }
                 System.out.println("Value = " + value);
+                break;
             case 4:
                 for (String str : args) {
                     System.out.println(args);
                 }
+                break;
             case 5:
                 for (double i = 1; i <= 10; i++) {
                     System.out.printf("%5.2f", 1 / i);
                 }
+                break;
 
             case 6:
                 int Array2[] = new int[10];
                 int d;
+                System.out.print("Mass 1: ");
                 for (int i = 0; i < 10; i++) {
                     d = (int) (Math.random() * 100 + 1);
                     Array2[i] = d;
@@ -54,12 +58,14 @@ public class Main {
                         }
                     }
                 }
+                System.out.print("Mass 1 sorted: ");
                 for (int i = 0; i < 10; i++) {
                     System.out.print("  " + Array2[i]);
                 }
                 System.out.println();
                 int Array3[] = new int[10];
                 Random random = new Random();
+                System.out.print("Mass 2: ");
                 for (int a = 0; a < 10; a++) {
                     int b = random.nextInt(100) + 1;
                     Array3[a] = b;
@@ -80,9 +86,11 @@ public class Main {
                         }
                     }
                 }
+                System.out.print("Mass 2 sorted: ");
                 for (int i = 0; i < 10; i++) {
                     System.out.print("  " + Array3[i]);
                 }
+                break;
             case 7:
                 int number = scanner.nextInt();
                 int number2 = number;
@@ -93,6 +101,8 @@ public class Main {
                     result = result * i;
                 }
                 System.out.print("Проверка = " + result);
+                break;
+
 
         }
     }

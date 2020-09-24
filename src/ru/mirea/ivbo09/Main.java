@@ -103,7 +103,6 @@ public class Main {
                 System.out.print("Проверка = " + result);
                 break;
 
-
         }
     }
 }

@@ -29,17 +29,53 @@ public class Main {
                 int Array2[] = new int[10];
                 int d;
                 for (int i = 0; i < 10; i++) {
-                    d=(int)(Math.random()*20+1);
-                    Array2[i]=d;
-                    System.out.print("  "+Array2[i]);
+                    d = (int) (Math.random() * 100 + 1);
+                    Array2[i] = d;
+                    System.out.print("  " + Array2[i]);
                 }
                 System.out.println();
-                int Array3[]=new int[10];
-                Random random = new Random();
-                for (int a = 0; a < 10; a++) {
-                    int b = random.nextInt(20)+1;
-                    Array3[a]=b;
-                    System.out.print("  "+Array3[a]);
+                boolean sorted=false;
+                int temp;
+                while(!sorted) {
+                    sorted = true;
+                    for (int i = 0; i < Array2.length - 1; i++) {
+                        if (Array2[i] > Array2[i + 1]) {
+                            temp = Array2[i];
+                            Array2[i] = Array2[i + 1];
+                            Array2[i + 1] = temp;
+                            sorted = false;
+
+                        }
+                    }
+                }
+                for (int i = 0; i < 10; i++) {
+                    System.out.print("  "+Array2[i]);
+                }
+                    System.out.println();
+                    int Array3[] = new int[10];
+                    Random random = new Random();
+                    for (int a = 0; a < 10; a++) {
+                        int b = random.nextInt(100) + 1;
+                        Array3[a] = b;
+                        System.out.print("  " + Array3[a]);
+                    }
+                System.out.println();
+                boolean sort=false;
+                int temp2;
+                while(!sort) {
+                    sort = true;
+                    for (int i = 0; i < Array3.length - 1; i++) {
+                        if (Array3[i] > Array3[i + 1]) {
+                            temp2 = Array3[i];
+                            Array3[i] = Array3[i + 1];
+                            Array3[i + 1] = temp2;
+                            sort = false;
+
+                        }
+                    }
+                }
+                for (int i = 0; i < 10; i++) {
+                    System.out.print("  "+Array3[i]);
                 }
 
 
